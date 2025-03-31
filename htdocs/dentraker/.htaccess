@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule ^usuarios$ TrafficRestControll.php?select=usuarios&type=all [NC]
+RewriteRule ^usuario/([0-9]+)$ TrafficRestControll.php?select=usuarios&type=single&id=$1 [NC]
+RewriteRule ^usuario/login$ TrafficRestControll.php?select=usuarios&type=login [NC]
+RewriteRule ^insert/usuario$ TrafficRestControll.php?select=usuarios&type=insert [NC]
+RewriteRule ^chamados$ TrafficRestControll.php?select=pontos&type=all [NC]
+RewriteRule ^chamados/usuario/([0-9]+)$ TrafficRestControll.php?select=pontos&type=single&id=$1 [NC]
+RewriteRule ^chamados/changestatus$ TrafficRestControll.php?select=pontos&type=changestatus [NC]
+RewriteRule ^insert/chamado$ TrafficRestControll.php?select=pontos&type=insert [NC] 
+RewriteRule ^comentarios$ TrafficRestControll.php?select=comentario&type=all [NC]
+RewriteRule ^comentarios/chamado/([0-9]+)$ TrafficRestControll.php?select=comentario&type=single&id=$1 [NC]
+RewriteRule ^comentarios/comentadores/chamado/([0-9]+)$ TrafficRestControll.php?select=usuarios&type=commentators&id=$1 [NC]
+RewriteRule ^insert/comment$ TrafficRestControll.php?select=comentario&type=insert [NC]
+RewriteRule ^serverMethods/imageSave$ TrafficRestControll.php?select=images&type=insert [NC]
+
