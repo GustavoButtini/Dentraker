@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DenTraker</string>
+    <string name="openmenu">Abrir menu</string>
+    <string name="closemenu">Fechar menu</string>
+</resources>

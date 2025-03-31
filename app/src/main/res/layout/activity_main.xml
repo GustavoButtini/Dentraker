@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".pages.MainActivity">
+
+    <EditText
+        android:id="@+id/userLogin"
+        android:layout_width="232dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/white_light_border_bg"
+        android:ems="10"
+        android:inputType="text"
+        android:minWidth="72dp"
+        android:minHeight="232dp"
+        android:paddingLeft="10dp"
+        android:text="Nome de Usuario"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <Button
+        android:id="@+id/passButton"
+        android:layout_width="34dp"
+        android:layout_height="46dp"
+        android:background="#00FFFFFF"
+        android:drawableEnd="@drawable/eye_solid"
+        android:drawableTint="#000000"
+        android:fadeScrollbars="false"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passLogin"
+        app:layout_constraintEnd_toEndOf="@+id/passLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passLogin"
+        app:layout_constraintTop_toTopOf="@+id/passLogin" />
+
+    <EditText
+        android:id="@+id/passLogin"
+        android:layout_width="232dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/white_light_border_bg"
+        android:ems="10"
+        android:inputType="text"
+        android:minWidth="232dp"
+        android:minHeight="72dp"
+        android:paddingLeft="10dp"
+        android:text="Senha"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLogin" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Bem vindo ao Dentraker !"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="76px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="255dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="40dp"
+        android:text="Caso seja novo, crie sua conta para se proteger da dengue !"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePass" />
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_light_border_bg"
+        android:padding="10dp"
+        android:text="Criar Conta"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/changePass"
+        android:layout_width="139dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/white_light_border_bg"
+        android:padding="10dp"
+        android:text="Esqueci minha senha"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:barrierMargin="0px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/passLogin" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/white_light_border_bg"
+        android:padding="10dp"
+        android:text="Acessar"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/changePass"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

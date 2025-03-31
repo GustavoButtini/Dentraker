@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group>
+        <item
+            android:id="@+id/sideitem1"
+            android:icon="@drawable/baseline_view_list_24"
+            android:title="Pontos de dengue"
+            />
+        <item
+            android:id="@+id/sideitem2"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Perfil de usuario"
+            />
+    </group>
+</menu>
